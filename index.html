@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゆうき的个人主页</title>
+    <style>
+        /* 这里是之前 CSS 框里的内容 */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', sans-serif;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 45px 35px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 320px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 { margin: 10px 0; color: #333; font-size: 1.8rem; letter-spacing: 2px; }
+        .bio { color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 30px; }
+
+        .links-container { display: flex; flex-direction: column; gap: 15px; }
+
+        .link-btn {
+            text-decoration: none;
+            background: white;
+            color: #444;
+            padding: 14px;
+            border-radius: 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .link-btn:hover {
+            background: #f8fafc;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            color: #a1c4fd;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="avatar-container">
+            <img src="https://i.pravatar.cc/150?img=5" alt="头像" class="avatar">
+        </div>
+        
+        <div class="text-content">
+            <h1>ゆうき</h1>
+            <p class="bio">
+                🇯🇵 学部在读 ｜ 教育系・随笔发布<br>
+                记录在日本的教育观察与生活碎笔。
+            </p>
+        </div>
+        
+        <div class="links-container">
+            <a href="pilgrimage.html" class="link-btn">🌸 女子校聖地巡礼</a>
+            <a href="blog.html" class="link-btn">📝 記事</a>
+            <a href="about.html" class="link-btn">📮 关于我</a>
+        </div>
+    </div>
+</body>
+</html>
