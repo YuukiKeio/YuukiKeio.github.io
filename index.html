@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ゆうき的个人主页</title>
     <style>
-        /* 这里是之前 CSS 框里的内容 */
         body {
             margin: 0;
-            height: 100vh;
+            /* 修改这里：从 height 改为 min-height，确保内容多时可以滚动 */
+            min-height: 100vh;
             display: flex;
+            /* 修改这里：让卡片和页脚垂直排列 */
+            flex-direction: column; 
             justify-content: center;
             align-items: center;
             font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', sans-serif;
             background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
+            /* 增加一点内边距，防止手机端贴边 */
+            padding: 20px 0;
         }
 
         @keyframes gradientBG {
@@ -34,6 +38,8 @@
             text-align: center;
             width: 320px;
             border: 1px solid rgba(255, 255, 255, 0.4);
+            /* 增加一点底边距，推开页脚 */
+            margin-bottom: 30px;
         }
 
         .avatar {
@@ -67,6 +73,14 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.08);
             color: #a1c4fd;
         }
+
+        /* 页脚专用样式 */
+        footer {
+            font-size: 0.8rem;
+            color: rgba(102, 102, 102, 0.8); /* 半透明灰色 */
+            text-align: center;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -88,5 +102,9 @@
             <a href="about.html" class="link-btn">📮 关于我</a>
         </div>
     </div>
+
+    <footer>
+        © 2025 ゆうき | 本网站由 AI 辅助生成
+    </footer>
 </body>
 </html>
