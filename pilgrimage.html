@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>女子校圣地巡礼 | ゆうき</title>
+    <style>
+        /* 保持统一的动态背景 */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', sans-serif;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            padding: 40px 20px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 巡礼页专用长卡片 */
+        .content-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 50px 40px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            max-width: 700px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        /* 返回链接 */
+        .back-home {
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .back-home:hover { color: #a1c4fd; transform: translateX(-3px); }
+
+        h1 { color: #333; margin-bottom: 30px; }
+
+        /* 前言/注释样式 */
+        .preface {
+            color: #999; /* 灰色字体 */
+            font-size: 0.9rem;
+            line-height: 1.8;
+            background: rgba(240, 240, 240, 0.5);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .preface-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #777;
+        }
+
+        /* 地区标题 */
+        .region-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin: 40px 0 20px 0;
+            color: #444;
+            border-left: 5px solid #a1c4fd;
+            padding-left: 15px;
+        }
+
+        /* 学校列表样式 */
+        .school-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        .school-list li {
+            background: white;
+            padding: 12px 18px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            color: #555;
+            transition: 0.3s;
+        }
+        .school-list li:hover {
+            transform: translateY(-2px);
+            background: #fdf2f2; /* 淡淡的樱花粉 */
+            color: #ff9a9e;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: rgba(102, 102, 102, 0.6);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-card">
+        <a href="index.html" class="back-home">⬅ 返回首页</a>
+        
+        <h1>女子校圣地巡礼 🌸</h1>
+
+        <div class="preface">
+            <span class="preface-title">写在前面</span>
+            所有的女子校巡礼都是遵守规则在校园祭 or 平时学校外围打卡，没有涉及到任何违规违法行为。<br>
+            多校区 or 校区内包含一贯教育类型的学校为了方便记录只会写一个（例如お茶の水女子大学同时包括小学初中高中）。<br>
+            部分系列校・姉妹校单独列出。
+        </div>
+
+        <div class="region-title">日本 🇯🇵</div>
+        <ul class="school-list">
+            <li>お茶の水女子大学</li>
+            <li>奈良女子大学</li>
+            <li>日本女子大学</li>
+            <li>東洋英和女学院</li>
+            <li>桜蔭学院</li>
+            <li>雙葉</li>
+            <li>横浜雙葉学院</li>
+            <li>女子学院（JG）</li>
+            <li>白百合学園</li>
+            <li>慶應女子</li>
+            <li>学習院女子</li>
+            <li>フェリス女学院</li>
+            <li>香蘭女学校</li>
+            <li>神戸女学院</li>
+        </ul>
+
+        <div class="region-title">中国 🇨🇳</div>
+        <ul class="school-list">
+            <li>无锡市第一女子中学</li>
+        </ul>
+
+        <footer>
+            © 2025 ゆうき | 本网站由 AI 辅助生成
+        </footer>
+    </div>
+
+</body>
+</html>
